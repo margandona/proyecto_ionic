@@ -1,13 +1,155 @@
+
+
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>tab5</ion-title>
+    <ion-title style="text-align: center;">
+      Usuario
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">tab5</ion-title>
+      <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+  <ion-card style="display: flex; justify-content: center;">
+    <img alt="Silhouette of mountains" src="../../assets/img/imagen2.png" />
+  </ion-card>
+  <ion-card style="display: flex; flex-direction: column; align-items: center;">
+    
+    <!-- Input de Nombre -->
+    <ion-list>
+      <ion-item>
+        <ion-input type="text" labelPlacement="stacked" label="Nombre" placeholder="Lana Banana">
+          <ion-icon slot="start" name="person" aria-hidden="true"></ion-icon>
+          <!-- Botón para mostrar/ocultar contraseña -->
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+         
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+
+    <!-- Input de Numero de Teléfono -->
+    <ion-list>
+      <ion-item>
+        <ion-input type="num" labelPlacement="stacked" label="Teléfono" placeholder="email@domain.com">
+          <ion-icon slot="start" name="flower" aria-hidden="true"></ion-icon>
+          <!-- Botón para mostrar/ocultar contraseña -->
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+         
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+    <!-- Input de correo electrónico -->
+    <ion-list>
+      <ion-item>
+        <ion-input type="email" labelPlacement="stacked" label="Email" placeholder="email@domain.com">
+          <ion-icon slot="start" name="mail" aria-hidden="true"></ion-icon>
+          <!-- Botón para mostrar/ocultar contraseña -->
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+         
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+  
+    <!-- Input de contraseña -->
+    <ion-list>
+      <ion-item>
+        <ion-input type="password" labelPlacement="stacked" label="Nueva Contraseña" placeholder="*******">
+          <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <!-- Botón para mostrar/ocultar contraseña -->
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+            <!-- Icono de ojo para mostrar/ocultar contraseña -->
+            <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+    <!-- Input de contraseña -->
+    <ion-list>
+      <ion-item>
+        <ion-input type="password" labelPlacement="stacked" label="Nueva Contraseña" placeholder="*******">
+          <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <!-- Botón para mostrar/ocultar contraseña -->
+          <ion-button fill="clear" slot="end" aria-label="Show/hide">
+            <!-- Icono de ojo para mostrar/ocultar contraseña -->
+            <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <!--genero-->
+  <div style="display: flex; justify-content: center; max-width: 600px; margin: 0 auto;">
+  <ion-item>
+    <ion-select label="Género" placeholder="Seleccionar Género">
+      <ion-select-option value="apple">Hetero-Cisgenero</ion-select-option>
+      <ion-select-option value="apple">Homo-Cisgenero</ion-select-option>
+      <ion-select-option value="banana">Transgenero</ion-select-option>
+      <ion-select-option value="orange">No binario</ion-select-option>
+      <ion-select-option value="orange">Asexuado</ion-select-option>
+      <ion-select-option value="orange">Queer</ion-select-option>
+    </ion-select>
+  </ion-item>
+</div>
+  
+  <style>
+    .centered-buttons {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding-top: 30px;
+       
+     }
+     .custom-button {
+     background-color: #399592;
+     /* Otros estilos (por ejemplo, color de texto, bordes, etc.) */
+   }
+  </style>
+  <ion-card style="display: flex; flex-direction: column; align-items: center;">
+    <!-- Botón de inicio de sesión -->
+    <ion-button shape="round" class="custom-buttom">Actualizar</ion-button>
+    <ion-button shape="round" class="custom-buttom">Contratar</ion-button>
+  
+
+  </ion-card>
+  
+  
+  
+<br>
+
+<div class="centered-buttons">
+  <!-- Facebook -->
+  <ion-button shape="round">
+    <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+  </ion-button>
+
+  <!-- YouTube -->
+  <ion-button shape="round">
+    <ion-icon slot="icon-only" name="logo-youtube"></ion-icon>
+  </ion-button>
+
+  <!-- Instagram -->
+  <ion-button shape="round">
+    <ion-icon slot="icon-only" name="logo-instagram"></ion-icon>
+  </ion-button>
+
+  <!-- TikTok -->
+  <ion-button shape="round">
+    <ion-icon slot="icon-only" name="logo-tiktok"></ion-icon>
+  </ion-button>
+
+  <!-- LinkedIn -->
+  <ion-button shape="round">
+    <ion-icon slot="icon-only" name="logo-linkedin"></ion-icon>
+  </ion-button>
+</div>
+
+<!-- Include Ionicons library -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
